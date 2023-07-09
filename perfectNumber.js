@@ -6,14 +6,12 @@ const perfectNumber = (num) => {
   let sum = 0, i = 1;
   for (i; i<num; i++) {
     num % i == 0 ? (sum += i) : (sum += 0);
-    console.log(sum);
   }
   num == sum
     ? console.log("The number is a Perfect number")
     : console.log("The number is not a Perfect number");
 };
 
-console.log(typeof readline);
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
