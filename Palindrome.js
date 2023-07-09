@@ -38,7 +38,6 @@ const rl = readline.createInterface({
 });
 
 rl.question("Enter a string: ", (input) => {
-  // console.log(input);
   checkPalindrome(input);
   rl.close();
 });
