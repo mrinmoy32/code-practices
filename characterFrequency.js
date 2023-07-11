@@ -1,7 +1,5 @@
 const readline = require("readline");
 
-const str = "palMrinmoypalpal";
-searchValue = "p"
 function countOccurrences(str, searchValue) {
   splittedArray = str.split(searchValue);
   countOfChar = splittedArray.length -1;
