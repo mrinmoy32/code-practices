@@ -46,10 +46,16 @@
 
 const reverseString = (string) => string.split("").reverse().join("");
 
-const checkPalindrome = (string) =>
-  reverseString(string) === string
-    ? console.log(string, "is a palindrome")
-    : console.log(string, "is not a palindrome");
+const checkPalindrome = (string) =>{
+  if (reverseString(string) === string){
+    console.log(string, "is a palindrome");
+    return true;
+  }
+  else{
+    console.log(string, "is not a palindrome");
+    return false;
+  } 
+}
 
 if (process.argv.length > 2) {
   const input = process.argv[2];
