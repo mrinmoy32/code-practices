@@ -1,4 +1,4 @@
-//A plaindrome is a word that is spelt the same forward and backward.
+// 1. A plaindrome is a word that is spelt the same forward and backward.
 
 //E.g. "BOB", "racecar", "121"
 
@@ -21,23 +21,39 @@
 // if(givenWord === reverseWord) console.log(givenWord , "is a Plaindrome");
 // else console.log(givenWord , "is not a Plaindrome");
 
-//Simpler way in js =================================>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//2. Simpler way in js =================================>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-const readline = require("readline");
+// const readline = require("readline");
 
-const reverseString = string => string.split("").reverse().join("");
+// const reverseString = string => string.split("").reverse().join("");
 
-const checkPalindrome = string =>
+// const checkPalindrome = string =>
+//   reverseString(string) === string
+//     ? console.log(string, "is a palindrome")
+//     : console.log(string, "is not a palindrome");
+
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
+
+// rl.question("Enter a string: ", (input) => {
+//   checkPalindrome(input);
+//   rl.close();
+// });
+
+//3. Using process.argv : this helps to avoid execution readline module
+
+const reverseString = (string) => string.split("").reverse().join("");
+
+const checkPalindrome = (string) =>
   reverseString(string) === string
     ? console.log(string, "is a palindrome")
     : console.log(string, "is not a palindrome");
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
-
-rl.question("Enter a string: ", (input) => {
+if (process.argv.length > 2) {
+  const input = process.argv[2];
   checkPalindrome(input);
-  rl.close();
-});
+}
+
+module.exports = checkPalindrome;
