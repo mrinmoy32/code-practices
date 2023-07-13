@@ -20,3 +20,6 @@ const checkPalindromeWithInput = () => {
 };
 
 module.exports = checkPalindrome;
+// module.exports = checkPalindromeWithInput; when we need to take userInput
+
+
