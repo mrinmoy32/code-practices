@@ -1,3 +1,3 @@
 # codes-practices
 
-Basic codes written in JavaScript. 
+Basic codes written in JavaScript.
