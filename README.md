@@ -2,9 +2,9 @@
 
 Basic codes written in JavaScript.
 
-<bold>
+<strong>
 Here are some suggestions from Subham Soni
-</bold>
+</strong>
 
 Shubham Soni
 
